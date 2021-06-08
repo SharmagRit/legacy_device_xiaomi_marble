@@ -412,6 +412,9 @@ ro.soc.manufacturer=QTI
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# SoC
+ro.soc.manufacturer=QTI
+
 # USB
 persist.sys.usb.config=none
 vendor.usb.use_gadget_hal=0
