@@ -8,23 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AOSP stuff.
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_USES_AOSP_RECOVERY := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from marble device.
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := marble
-PRODUCT_NAME := aosp_marble
+PRODUCT_NAME := lineage_marble
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 12 Turbo
 
@@ -33,3 +25,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Rising OS Stuff with GApps
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+
+# Maintainer Stuff
+RISING_MAINTAINER := SharmagRit
+#RISING_BUILDTYPE := OFFICIAL
