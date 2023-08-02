@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 PRODUCT_DEVICE := marble
 PRODUCT_NAME := lineage_marble
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 12 Turbo
+PRODUCT_MODEL := POCO F5
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="marble"
