@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
     SecureElement \
     com.android.nfc_extras
 
-# PE overlays
+# Custom-overlays
 PRODUCT_PACKAGES += \
     ApertureResOverlayMarble \
     FrameworksResOverlayMarbleCustom \
