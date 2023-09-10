@@ -36,6 +36,10 @@ TARGET_ENABLE_BLUR := true
 #TARGET_CORE_GMS := true
 WITH_GMS := true
 
+# MiuiCamera
+TARGET_INCLUDES_MIUI_CAMERA := true
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # Maintainer Stuff
 RISING_MAINTAINER := SharmagRit
 RISING_BUILDTYPE := OFFICIAL
