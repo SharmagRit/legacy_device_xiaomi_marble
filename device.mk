@@ -121,9 +121,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
@@ -456,10 +453,6 @@ PRODUCT_PACKAGES += \
     QtiTelephony \
     qti-telephony-common
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.3.vendor
-
 # Rootdir
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
@@ -631,7 +624,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
-#WPA
+# WPA
 WPA := wpa_cli
 
 # Wi-Fi
