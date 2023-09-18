@@ -687,4 +687,10 @@
 
      <!-- The default volume for the ring stream -->
      <integer name="config_audio_ring_vol_default">11</integer>
+
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/qcom-battery/input_suspend</string>
+    <string name="config_smartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_smartChargingResumeValue" translatable="false">0</string>
 </resources>
