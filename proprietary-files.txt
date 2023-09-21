@@ -1567,6 +1567,10 @@ vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+system/lib/libdolbyottcontrol.so
+system/lib/libdovi_omx.so
+system/lib64/libdolbyottcontrol.so
+system/lib64/libdovi_omx.so
 
 # DPM
 system_ext/bin/dpmd
