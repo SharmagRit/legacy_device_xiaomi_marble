@@ -23,6 +23,8 @@ $(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \

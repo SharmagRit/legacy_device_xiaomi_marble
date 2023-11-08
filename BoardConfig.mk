@@ -110,8 +110,8 @@ BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
     kpti=off \
-    swinfo.fingerprint=$(AWAKEN_VERSION) \
-    mtdoops.fingerprint=$(AWAKEN_VERSION)
+    swinfo.fingerprint=$(SUPERIOR_VERSION) \
+    mtdoops.fingerprint=$(SUPERIOR_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -241,7 +241,7 @@ DEVICE_MANIFEST_UKEE_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/awaken/config/device_framework_matrix.xml
+    vendor/superior/config/device_framework_matrix.xml
 ODM_MANIFEST_SKUS += marble
 ODM_MANIFEST_MARBLE_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
