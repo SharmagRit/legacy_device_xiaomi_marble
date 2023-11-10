@@ -250,6 +250,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlays
+
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
