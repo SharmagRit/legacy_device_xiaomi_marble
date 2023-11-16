@@ -132,6 +132,7 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Workaround to make lineage's soong generator work
+TARGET_BOARD_KERNEL_HEADERS := $(KERNEL_PATH)/kernel-headers
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Kernel Binary
