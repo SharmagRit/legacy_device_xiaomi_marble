@@ -22,4 +22,7 @@
     <!-- Whether show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
 
+    <!-- Maintainer info -->
+    <string name="config_maintainer_name" translatable="false">SharmagRit</string>
+    <string name="config_maintainer_link"  translatable="false">https://github.com/SharmagRit</string>
 </resources>
